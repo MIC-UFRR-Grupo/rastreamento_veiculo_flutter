@@ -3,7 +3,7 @@
 ## 📚 Sobre a Disciplina  
 **Disciplina**: MIC015 – Hands-On Intermediary  
 **Atividade**: Maker Aula 05  
-**Assunto**: Avanço e melhorias no projeto do **Rastreamento de Veículo**
+**Assunto**: Avanço e melhorias no projeto do **Rastreamento de Veículo - Gestão**
 
 ## 🚀 Projeto  
 Este repositório contém a implementação e evolução de um projeto de Gestão rastreamento de veículo hospitalar
