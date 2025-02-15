@@ -14,7 +14,7 @@ Este repositório contém a implementação e evolução de um projeto de rastre
 - **Erica Camila Silva Cunha**  
 - **Filipe Gabriel Tomaz Brito**  
 - **Jenner Patrick Lopes Brasil**  
-- **Wendemara Aparecida da Silva Gomes**
+- **Wendenmara Aparecida da Silva Gomes**
 
 ---
 
