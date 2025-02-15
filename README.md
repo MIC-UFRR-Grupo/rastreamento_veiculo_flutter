@@ -1,4 +1,4 @@
-# MIC015 – Hands-On Intermediary: Projeto 02
+# MIC015 – Hands-On Intermediary: Projeto 02 - Gestão
 
 ## 📚 Sobre a Disciplina  
 **Disciplina**: MIC015 – Hands-On Intermediary  
@@ -6,7 +6,7 @@
 **Assunto**: Avanço e melhorias no projeto do **Rastreamento de Veículo**
 
 ## 🚀 Projeto  
-Este repositório contém a implementação e evolução de um projeto de rastreamento de veículo hospitalar
+Este repositório contém a implementação e evolução de um projeto de Gestão rastreamento de veículo hospitalar
 
 ---
 
@@ -20,7 +20,7 @@ Este repositório contém a implementação e evolução de um projeto de rastre
 
 |   |   |
 |----------|----------|
-| <img src="https://github.com/MIC-UFRR-Grupo-8/rastreamento_veiculo_flutter/blob/main/Captura%20de%20tela%202025-02-14%20193011.png" alt="Diagrama" width="360">|<img src="" alt="Foto" width="640"> |
+| <img src="https://github.com/MIC-UFRR-Grupo-8/rastreamento_veiculo_flutter/blob/main/Esquema%20de%20conex%C3%A3o.png" alt="Diagrama" width="360">|<img src="" alt="Foto" width="640"> |
 
 
 
