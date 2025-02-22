@@ -45,7 +45,17 @@ void loop() {
   display.setCursor(0,0);
   display.print("AD8232: ");
   display.print(sensorValue);
+  //display.display();
   
+    // Código para acionar o buzzer
+  if (sensorValue > 1000) {
+    digitalWrite(18, HIGH);
+  } else {
+    digitalWrite(18, LOW);
+  }
+
+  delay(500);
+
   // Leitura do PN532
   uint8_t success;
   uint8_t uid[] = { 0, 0, 0, 0, 0, 0, 0 }; // Buffer para armazenar o ID da tag
@@ -56,12 +66,12 @@ void loop() {
   if (success) {
     display.setCursor(0,10);
     display.print("Tag ID: ");
-    for (uint8_t i=0; i < uidLength; i++) {
+    for (uint8_t i = 0; i < uidLength; i++) {
       display.print(uid[i], HEX);
     }
     display.display();
     
-    // Aciona o buzzer se a tag for lida com sucesso
+    // Aciona o buzzer quando uma tag é lida
     digitalWrite(18, HIGH);
     delay(500); // Mantém o buzzer ligado por 500ms
     digitalWrite(18, LOW);
