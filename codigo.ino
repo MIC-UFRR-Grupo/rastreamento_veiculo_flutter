@@ -15,7 +15,6 @@ void setup() {
   Wire.begin();
   
   // Inicializa o display OLED
-  Serial.println("OLED vai começar");
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.clearDisplay();
   display.setTextSize(1);
@@ -25,7 +24,6 @@ void setup() {
   display.display();
   
   // Inicializa o sensor PN532
-  Serial.println("PN532 vai começar");
   nfc.begin();
   uint32_t versiondata = nfc.getFirmwareVersion();
   if (!versiondata) {
@@ -47,21 +45,29 @@ void loop() {
   display.setCursor(0,0);
   display.print("AD8232: ");
   display.print(sensorValue);
-  display.display();
   
-  // Código para acionar o buzzer
-  if (sensorValue > 1000) {
+  // Leitura do PN532
+  uint8_t success;
+  uint8_t uid[] = { 0, 0, 0, 0, 0, 0, 0 }; // Buffer para armazenar o ID da tag
+  uint8_t uidLength;                      // Comprimento do buffer de ID
+  
+  // Verifica se há uma tag disponível
+  success = nfc.readPassiveTargetID(PN532_MIFARE_ISO14443A, uid, &uidLength);
+  if (success) {
+    display.setCursor(0,10);
+    display.print("Tag ID: ");
+    for (uint8_t i=0; i < uidLength; i++) {
+      display.print(uid[i], HEX);
+    }
+    display.display();
+    
+    // Aciona o buzzer se a tag for lida com sucesso
     digitalWrite(18, HIGH);
-  } else {
+    delay(500); // Mantém o buzzer ligado por 500ms
     digitalWrite(18, LOW);
+  } else {
+    display.display();
   }
-
-  delay(1000);
-
-  display.clearDisplay();
-  display.setCursor(0,0);
-  display.print("PN532: ");
-  display.display();
 
   delay(500);
 }
