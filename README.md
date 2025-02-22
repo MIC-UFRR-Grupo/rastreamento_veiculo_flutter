@@ -5,7 +5,7 @@
 **Atividade**: Maker Aula 05  
 **Assunto**: Avanço e melhorias no projeto do **Rastreamento de Veículo - Gestão**
 
-## 🚀 Projeto  
+## 🚀 Projeto  <br>
 Este repositório contém a implementação e evolução de um projeto de Gestão rastreamento de veículo hospitalar
 Link do esquema: https://wokwi.com/projects/422902839603527681
 ---
@@ -20,7 +20,7 @@ Link do esquema: https://wokwi.com/projects/422902839603527681
 
 |   |   |
 |----------|----------|
-| <img src="https://github.com/MIC-UFRR-Grupo-8/rastreamento_veiculo_flutter/blob/main/Esquema%20de%20conex%C3%A3o.png" alt="Diagrama" width="380">|<img src="" alt="Foto" width="620"> |
+| <img src="https://github.com/MIC-UFRR-Grupo-8/rastreamento_veiculo_flutter/blob/main/Esquema%20de%20conex%C3%A3o.png" alt="Diagrama" width="400">|<img src="https://github.com/MIC-UFRR-Grupo/rastreamento_veiculo_flutter/blob/main/foto.jpg" alt="Foto" width="600"> |
 
 
 
